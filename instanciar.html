@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Webleb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <h1>INSTANCIAR OBJETO</h1>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="city">
+  <br>
+  <br>
+  <br>
+  <br>
+
+ <p>
+  <strong>Instância. Uma instância de uma classe é um novo objeto criado dessa classe, com o operador new. Instanciar uma classe é criar um novo objeto do mesmo tipo dessa classe. Fornecer a instância concreta de alguma coisa. 2. [ Informática ] Em programação, criar uma instância concreta, um objecto de determinada classe.</strong></p>
+ 
+</div> <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
+  <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+    <div class="slider__item">
+      <img class="slider__image" src="./img/instanciar.png" alt="Image">
+      <div class="slider__info">
+        <h2>Instanciar</h2>
+      </div>
+    </div>
+    <div class="slider__item">
+    <a href="https://pt.stackoverflow.com/questions/423092/instanciar-uma-entidade-dentro-de-outra-entidade-como-fazer"> -Instanciar </a>
+      <div class="slider__info">
+        <h2>Links</h2>
+      </div>
+      
+    </div>
+  </div>
+  <div class="slider__nav" style="display: flex;justify-content: center;">
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Previous</button>
+    <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Next</button>
+  </div>
+</div>
+
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+</body>
+</html>
